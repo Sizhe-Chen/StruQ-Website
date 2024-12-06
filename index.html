@@ -50,10 +50,16 @@
         </a>
         <div class="navbar-dropdown">
           <a class="navbar-item" href="https://sizhe-chen.github.io/SecAlign-Website">
-            SecAlign
+            SecAlign (Meta, UC Berkeley)
+          </a>
+          <a class="navbar-item" href="https://arxiv.org/pdf/2410.09102">
+            ISE (Zoom, Princeton)
+          </a>
+          <a class="navbar-item" href="https://arxiv.org/pdf/2404.13208">
+            Instruction Hierarchy (OpenAI)
           </a>
           <a class="navbar-item" href="https://arxiv.org/pdf/2312.17673">
-            Jatmo
+            Jatmo (UC Berkeley)
           </a>
         </div>
       </div>
@@ -250,7 +256,7 @@
         <h3 class="title is-4">Structured Instruction-Tuned LLM</h3>
         <div class="content has-text-justified">
           <p>
-            StruQ simulates prompt injections in training for the LLM to learn to ignore any injected instructions in the data part (separated by the secure front-end).
+            StruQ simulates prompt injections in training for the LLM to learn to ignore any injected instructions in the data part.
           </p>
           <p>
             We fine-tune the LLM on our structured instruction-tuning dataset using standard SFT algorithm.
@@ -270,10 +276,13 @@
         <h2 class="title is-3">Experiments</h2>
         <div class="content has-text-justified">
           <p>
-            StruQ enjoys <2% attack success rates under optimization-free attacks, and significantly reduced the success rates of optimization-based attacks. 
+            StruQ LLMs maintain general-purpose utility (AlpacaEval2 WinRate).
           </p>
           <p>
-            StruQ LLMs maintain general-purpose utility.
+            StruQ enjoys <2% attack success rates under optimization-free attacks (Max ASR Opt.-Free). 
+          </p>
+          <p>
+            StruQ significantly reduces the success rates of optimization-based attacks (Max ASR Opt.-Based).
           </p>
         </div>
         <div class="content has-text-centered">
