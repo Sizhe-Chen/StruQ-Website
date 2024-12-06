@@ -247,7 +247,7 @@
             StruQ separates the prompt and data by delimiters that can only be used by the system designer.
           </p>
           <p>
-            The secure-front-end reserves some special tokens as delimiters, and filters the data out of any separation delimiter.
+            The secure-front-end reserves some special tokens ([MARK], ...) as delimiters, and filters the data out of any separation delimiter.
           </p>
         </div>
         <div class="content has-text-centered">
@@ -257,6 +257,9 @@
         <div class="content has-text-justified">
           <p>
             StruQ simulates prompt injections in training for the LLM to learn to ignore any injected instructions in the data part.
+          </p>
+          <p>
+            The generated dataset contains clean samples and samples with injected instructions, which are randomly chosen from the dataset.
           </p>
           <p>
             We fine-tune the LLM on our structured instruction-tuning dataset using standard SFT algorithm.
