@@ -227,9 +227,9 @@
             StruQ separates the prompt part and the data part into two channels. The system is made of
           </p>
           <p>
-            &#x2022; A secure front-end that formulates a prompt and data into a special-format input
+            &#x2022; A secure front-end that formulates a prompt and data into a special-format input.
           <p>
-            &#x2022; A structured instruction-tuned LLM that produces high-quality outputs from these inputs
+            &#x2022; A structured instruction-tuned LLM that produces high-quality outputs from these inputs.
           </p>
         </div>
         <div class="content has-text-centered">
@@ -261,42 +261,33 @@
     <!--/ Method -->
   </div>
 </section>
-  
+
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Related Links</h2>
-
+    <!-- Experiments -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Experiments</h2>
         <div class="content has-text-justified">
           <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
+            StruQ enjoys <2% attack success rates under optimization-free attacks, and significantly reduced the success rates of optimization-based attacks. 
           </p>
           <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+            StruQ LLMs maintain general-purpose utility.
           </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/main_struq.png" width="100%"/>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
+    <!--/ Experiments -->
   </div>
 </section>
 
-
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
+    <div class="columns is-centered">
     <div class="column is-four-fifths">
     <h2 class="title">BibTeX</h2>
     <pre><code>@inproceedings{chen2024struq,
@@ -306,6 +297,7 @@
   year={2025}
 }</code></pre>
     </div>
+    </div>
   </div>
 </section>
 
@@ -313,7 +305,6 @@
 <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
-      <div class="column is-four-fifths">
       <div class="column is-8">
         <div class="content">
           <p>
@@ -327,7 +318,6 @@
             we just ask that you link back to this page in the footer.
           </p>
         </div>
-      </div>
       </div>
     </div>
   </div>
