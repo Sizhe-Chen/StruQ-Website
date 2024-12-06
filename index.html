@@ -172,7 +172,7 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
+    <!-- Background -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">LLM-Integrated Applications</h2>
@@ -210,10 +210,51 @@
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+    <!--/ Background -->
   </div>
 </section>
 
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Structured Queries (StruQ)</h2>
+        <div class="content has-text-justified">
+          <p>
+            StruQ separates the prompt part and the data part into two channels.
+          </p>
+          <p>
+            The system supporting structured queries is made of
+          </p>
+          <p>
+            A secure front-end that formulates a prompt and data into a special-format input
+          <p>
+            A structured instruction-tuned LLM that produces high-quality outputs from these inputs
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/fig0.pdf" width="100%"/>
+        </div>
+        <h3 class="title is-4">Secure Front-End</h3>
+        <div class="content has-text-justified">
+          <p>
+            StruQ separates the prompt and data by delimiters that can only be used by the system designer.
+          </p>
+          <p>
+            The secure-front-end reserves some special tokens as delimiters, and filters the data out of any separation delimiter.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/fig4.pdf" width="100%"/>
+        </div>
+      </div>
+    </div>
+    <!--/ Method -->
+  </div>
+</section>
+  
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Concurrent Work. -->
