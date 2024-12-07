@@ -1,8 +1,8 @@
-# Nerfies
+# Project
 
-This is the repository that contains source code for the [StruQ website](https://sizhe-chen.github.io/StruQ-Website).
+This is the repository that contains source code for the [StruQ website](https://sizhe-chen.github.io/StruQ-Website) for the USENIX Security'25 paper [StruQ: Defending Against Prompt Injection with Structured Queries](https://arxiv.org/pdf/2402.06363).
 
-If you find Nerfies useful for your work please cite:
+If you find this project useful for your work please cite:
 ```
 @inproceedings{chen2024struq,
   title={StruQ: Defending against prompt injection with structured queries},
