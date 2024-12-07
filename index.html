@@ -145,6 +145,10 @@
               </span>
             </div>
 
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">TL;DR: StruQ separates the prompt and the data to significantly mitigate prompt injections while preserving utility.</span>
+          </div>
+
           </div>
         </div>
       </div>
@@ -159,9 +163,6 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            TL;DR: StruQ separates the prompt and the data to significantly mitigate prompt injections while preserving utility.
-          </p>
           <p>
             Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language capabilities. However, as LLMs have improved, so have the attacks against them. Prompt injection attack is listed as the #1 threat to LLM-integrated applications, where an LLM input contains a trusted prompt (instruction) and an untrusted data (user documents, web retrieval, results from API calls, etc) with potentially injected instructions (Ignore previous instructions and …) to arbitrarily manipulate the LLM.
           </p>
@@ -259,7 +260,7 @@
             StruQ simulates prompt injections in training for the LLM to learn to ignore any injected instructions in the data part.
           </p>
           <p>
-            The generated dataset contains clean samples and samples with injected instructions that are sampled from the dataset.
+            The generated dataset contains clean samples and samples with injected instructions (also sampled from the dataset).
           </p>
           <p>
             We fine-tune the LLM on our structured instruction-tuning dataset using standard SFT algorithm.
