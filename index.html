@@ -166,7 +166,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language capabilities. However, as LLMs have improved, so have the attacks against them. Prompt injection attack is listed as the #1 threat to LLM-integrated applications, where an LLM input contains a trusted prompt (instruction) and an untrusted data (user documents, web retrieval, results from API calls, etc) with potentially injected instructions (Ignore previous instructions and …) to arbitrarily manipulate the LLM.
+            Recent advances in Large Language Models (LLMs) enable exciting LLM-integrated applications, which perform text-based tasks by utilizing their advanced language capabilities. However, as LLMs have improved, so have the attacks against them. <a href="https://www.ibm.com/topics/prompt-injection">Prompt injection attack</a> is listed as the <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications">#1 threat</a> to LLM-integrated applications, where an LLM input contains a trusted prompt (instruction) and an untrusted data (user documents, web retrieval, results from API calls, etc) with potentially injected instructions (Ignore previous instructions and …) to arbitrarily manipulate the LLM.
           </p>
           <p>
             We introduce structured queries, a general approach to tackle this problem. Structured queries separate prompts and data into two channels. We implement a system that supports structured queries. This system is made of (1) a secure front-end that formats a prompt and user data into a special format, and (2) a specially trained LLM that can produce highquality outputs from these inputs. The LLM is trained using a novel fine-tuning strategy: we convert a base (non-instructiontuned) LLM to a structured instruction-tuned model that will only follow instructions in the prompt portion of a query. To do so, we augment standard instruction tuning datasets with examples that also include instructions in the data portion of the query, and fine-tune the model to ignore these. Our system significantly improves resistance to prompt injection attacks, with little or no impact on utility.
@@ -209,7 +209,7 @@
             The adversary injects an instruction in data to override the prompted instruction.
           </p>
           <p>
-            Listed as the #1 security threat for LLM-integrated  applications by OWASP.
+            Listed as the #1 security threat for LLM-integrated applications by OWASP.
           </p>
           <p>
             Example: A university wants to evaluate applicants’ CV with an LLM.
